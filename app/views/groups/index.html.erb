@@ -1,0 +1,18 @@
+<%= render partial: '/groups/partials/nav', locals: { title: 'Budget Categories', backurl: user_groups_path(user_id: current_user.id) } %>
+
+<div class="container">
+  <% @groups.each do |group| %>
+    <%= link_to user_group_path(user_id: @user.id, id: group.id), class: 'custom-category-links' do %>
+      <div class="name">
+        <h3><%= group.name %></h3>
+      </div>
+      <div class="image"><%= group.icon %></div>
+      <div class="total">$<%= '%.2f' % group.total_amount_by_group(group.id) %></div>
+    <% end %>
+  <% end %>
+
+  <button class="new-category-button">
+    <%= link_to 'Add new category', new_user_group_path(user_id: current_user.id) %>
+  </button>
+</div>
+

@@ -1,0 +1,49 @@
+<header>
+  <div class="title">
+    <div><%= link_to user_groups_path do %>
+      <%= content_tag(:div) do %>
+      <i class="icons">BACK</i>
+      <% end %>
+      <% end %></div>
+    <div>
+      <h2><%=@group.name%></h2>
+    </div>
+  </div>
+  <div>
+    <button><%= link_to "Add a new transaction", new_user_group_payment_path(current_user,@group), class: "button_text" %></button>
+  </div>
+</header>
+
+<div class="group_holder">
+  <div class="group_card">
+    <div class="card_element">
+      <div class="picture_holder">
+        <img src=<%= @group.icon %> alt="group picture">
+      </div>
+      <div class="name_holder">
+        <h5 class="group_name">
+          <%=@group.name%>
+        </h5>
+        <p class="detail_description">Group expenses description</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <% @payments.each do |payment| %>
+      <div class="transaction">
+        <p>Transaction No <%=payment.id%></p>
+        <div class="transaction_detail">
+          <p><%=payment.created_at.strftime('%d %B %Y')%></p>
+          <p>$<%=payment.amount%></p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <hr>
+    <div class="total_transaction">
+      <h5 class="total">TOTAL PAYMENT</h5>
+      <h5 class="total">$<%=number_with_delimiter(@group.total_amount_by_group(@group.id))%></h5>
+    </div>
+  </div>
+</div>
+</div>
