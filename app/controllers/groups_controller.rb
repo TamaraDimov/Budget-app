@@ -19,12 +19,12 @@ class GroupsController < ApplicationController
 
   def create
     @user = current_user
-    group = Group.new(
+    @group = Group.new(
       name: new_group_params['name'],
       icon: new_group_params['icon'],
       user_id: current_user.id
     )
-    if group.save
+    if @group.save
       flash[:success] = 'You successfully created new Category'
       redirect_to user_groups_path(user_id: current_user.id)
     else
