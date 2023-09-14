@@ -53,6 +53,8 @@
 
 - [Loom Video Presentation](https://www.loom.com/share/Budget-Tracker-Application-for-Ruby-Unreal-Skeleton-Project-29ea82b78de84c64b16e31028f2e4601?sid=b586eeb2-cf54-424e-9a5b-a308da657bfa)
 
+- [Demo link](https://rails-budget-e790cfd72770.herokuapp.com/)
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To run this project, take a copy of the code and follow the instruction below.
