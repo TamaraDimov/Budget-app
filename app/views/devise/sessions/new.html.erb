@@ -1,13 +1,26 @@
-<h2>Log in</h2>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<header>
+    <div class="title">
+      <div ><%= link_to(:back) do %>
+        <%= content_tag(:div) do %>
+          <i class="material-icons">Back</i>
+        <% end %>
+      <% end %></div>
+      <div><h2>login</h2></div>
+      <div><%= f.submit "Log in" %></div>
+    </div>
+  </header>
+
+  <div class="form-body">
   <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Enter your email" %>
+    <% f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Enter your email" %>
   </div>
 
   <div class="field">
-    <br />
-    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Enter your password" %>
+    <% f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password", placeholder:"Enter you password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
@@ -16,10 +29,6 @@
       <%= f.label :remember_me %>
     </div>
   <% end %>
-
-  <div class="actions">
-  <br/>
-    <%= f.submit "Log in" %>
   </div>
 <% end %>
 

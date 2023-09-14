@@ -9,7 +9,7 @@
           <i class="material-icons">BACK</i>
         <% end %>
       <% end %></div>
-      <div><h3>New Payment</h3></div>
+      <div><h2>New Payment</h2></div>
       <div><%= form.submit "Submit" %></div>
     </div>
   </header>
@@ -17,17 +17,17 @@
 <div class="form-body">
   <%= form_with url: user_group_payments_path(current_user, group_id:@group.id), method: :post,
   scope: :payment_item , local: true, class: "category-form" do |f| %>
-  <div class="custom-form-field">
+  <div class="form-field">
     <%= f.text_field :name, required:true,
-    placeholder:'Your name',class:'custom-form-field-text' %>
+    placeholder:'Enter Name',class:'custom-form-field-text' %>
   </div>
   
-  <div class="custom-form-field">
+  <div class="form-field">
   <%= f.number_field :amount, step:0.15,min:0 , required:true,
     placeholder:'Enter Amount', class:'custom-form-field-text' %>
   </div>
 
-  <div class="custom-form-field-selection">
+  <div class="form-field-selection">
   <%= f.collection_select :group_id, @current_user.groups, :id, :name, { prompt: 'Select a group' }, required: true %>
   </div>
   <% end %>

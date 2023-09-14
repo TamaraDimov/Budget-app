@@ -2,7 +2,7 @@
 
 <div class="container">
   <% @groups.each do |group| %>
-    <%= link_to user_group_path(user_id: @user.id, id: group.id), class: 'custom-category-links' do %>
+    <%= link_to user_group_path(user_id: @user.id, id: group.id), class: 'custom-links' do %>
       <div class="name">
         <h3><%= group.name %></h3>
       </div>
