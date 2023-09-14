@@ -6,6 +6,5 @@ class UsersController < ApplicationController
     redirect_to user_groups_path(user_id: @user.id)
   end
 
-  def new
-  end
+  def new; end
 end

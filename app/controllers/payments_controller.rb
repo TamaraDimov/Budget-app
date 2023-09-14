@@ -19,9 +19,7 @@ class PaymentsController < ApplicationController
     if @payment.save
       @payment_item = PaymentItem.new(payment_id: @payment.id, group_id: params[:payment_item][:group_id])
 
-      if @payment_item.save
-        redirect_to user_group_path(current_user, @group), notice: 'Payment successfully created.'
-      end
+      redirect_to user_group_path(current_user, @group), notice: 'Payment successfully created.' if @payment_item.save
 
     else
       render :new, status: :unprocessable_entity
