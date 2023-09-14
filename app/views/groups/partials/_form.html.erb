@@ -18,7 +18,8 @@
   </div>
   <div class="field">
       <%= form.label :icons %>
-	    <%= form.file_field :icon %>
+	    <%= form.file_field :icon, id: "category_photo_input", class: "waves-effect waves-light btn" %>
     </div>
+    <div id="category_photo_preview"></div> 
   </div>
 <% end %>

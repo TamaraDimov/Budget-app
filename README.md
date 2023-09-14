@@ -16,6 +16,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 # 📖 [Budget App] <a name="about-project"></a>
@@ -142,6 +143,12 @@ Feel free to check the [issues page](https://github.com/TamaraDimov/Budget-app/i
 ## Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for [this design on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 

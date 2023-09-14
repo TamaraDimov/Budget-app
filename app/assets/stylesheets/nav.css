@@ -3,6 +3,7 @@
 header {
   background-color: var(--primary-color);
   background-image: var(--gradient);
+  margin-top: -16px;
 }
 
 header img {
@@ -58,4 +59,12 @@ header button {
   color: var(--light-color);
   border: none;
   font-weight: 300;
+}
+
+.nav-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 35%;
 }

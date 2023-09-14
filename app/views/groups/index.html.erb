@@ -3,10 +3,15 @@
 <div class="container">
   <% @groups.each do |group| %>
     <%= link_to user_group_path(user_id: @user.id, id: group.id), class: 'custom-links' do %>
+      <div class="image"><%= image_tag group.icon if group.icon.attached? %></div>
+      <div class="category_flex">
       <div class="name">
         <h3><%= group.name %></h3>
       </div>
-      <div class="image"><%= group.icon %></div>
+       <div class="transaction_detail">
+        <p><%=group.created_at.strftime('%d %B %Y')%></p>
+       </div>
+</div>
       <div class="total">$<%= '%.2f' % group.total_amount_by_group(group.id) %></div>
     <% end %>
   <% end %>

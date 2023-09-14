@@ -28,8 +28,8 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
   font-family: 'roboto', sans-serif;
@@ -53,10 +53,6 @@ a {
 
 .sign {
   color: var(--text-color-3);
-}
-
-.main-title {
-  text-align: center;
 }
 
 .container {
@@ -87,13 +83,12 @@ a {
 }
 
 .custom-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 50px;
   background-color: white;
-  margin-bottom: 10px;
-  padding: 10px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  padding: 10px 40px;
   font-size: 12px;
 }
 
@@ -102,7 +97,6 @@ a {
   margin-bottom: 10px;
   padding: 10px;
   display: flex;
-  gap: 10px;
 }
 
 .group > div {
@@ -217,7 +211,16 @@ input[type='file']::file-selector-button {
   border: 2px solid var(--light-color);
 }
 
+.new-category-button a {
+  border: 2px solid var(--light-color);
+  color: var(--light-color);
+  padding: 2% 20%;
+}
+
 /* show folder for payment */
+.group_detail {
+  margin-top: 0;
+}
 
 .group_card {
   background-color: #fbfdff;
@@ -230,6 +233,11 @@ input[type='file']::file-selector-button {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.img {
+  width: 30px;
+  height: auto;
 }
 
 .picture_holder {
@@ -248,12 +256,6 @@ input[type='file']::file-selector-button {
   flex-direction: column;
   padding-left: 5px;
   align-items: flex-start;
-}
-
-.group_holder {
-  margin-top: 2%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .detail_description {
@@ -275,4 +277,9 @@ input[type='file']::file-selector-button {
   flex-direction: row;
   padding: 15px 10px;
   justify-content: space-between;
+}
+
+.category_flex {
+  display: flex;
+  flex-direction: column;
 }
