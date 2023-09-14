@@ -40,9 +40,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[xx]**
-- **[xx]**
-- **[xx]**
+- **Register and log in**
+- **Add new category**
+- **Add new transactions associated with a category**
+- **See the money spent on each category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,8 +120,9 @@ rspec spec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[xx]**
-- [ ] **[xx]**
+- [ ] **Implement some UX**
+- [ ] **Decent desktop design**
+- [ ] **Implement the left side menu**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
