@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -46,6 +47,10 @@
 - **See the money spent on each category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Loom Demo <a name="loom-demo"></a>
+
+- [Loom Video Presentation](https://www.loom.com/share/Budget-Tracker-Application-for-Ruby-Unreal-Skeleton-Project-29ea82b78de84c64b16e31028f2e4601?sid=b586eeb2-cf54-424e-9a5b-a308da657bfa)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
