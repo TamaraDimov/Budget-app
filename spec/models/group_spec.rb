@@ -4,13 +4,14 @@ require 'rails_helper'
 
 RSpec.describe Group, type: :model do
   let(:user) { User.create(email: 'test@example.com', password: 'password') }
-  let(:group) { described_class.new(name: 'Test Group', user: user) }
+  let(:group) { described_class.new(name: 'Test Group', user:) }
 
   it 'is valid with valid attributes' do
-    group.icon.attach(io: File.open(Rails.root.join('spec', 'fixtures', 'test_icon.png')), filename: 'test_icon.png', content_type: 'image/png')
+    group.icon.attach(io: File.open(Rails.root.join('spec', 'fixtures', 'test_icon.png')), filename: 'test_icon.png',
+                      content_type: 'image/png')
     expect(group).to be_valid
   end
-  
+
   it 'is not valid without a name' do
     group.name = nil
     expect(group).not_to be_valid
