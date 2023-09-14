@@ -47,8 +47,12 @@ body {
 a {
   text-decoration: none;
   font-size: 12px;
-  color: var(--text-color-3);
   margin-left: 50px;
+  color: var(--light-color);
+}
+
+.sign {
+  color: var(--text-color-3);
 }
 
 .main-title {
@@ -210,6 +214,7 @@ input[type='file']::file-selector-button {
   padding: 15px;
   text-transform: uppercase;
   font-size: 20px;
+  border: 2px solid var(--light-color);
 }
 
 /* show folder for payment */
