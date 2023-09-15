@@ -1,0 +1,48 @@
+/* SPLASH */
+
+.splashDiv {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+}
+
+.splashDiv > div:first-child {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.splashDiv > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.main-title {
+  text-align: center;
+  padding-bottom: 200px;
+  font-style: italic;
+  font-family: 'Lobster Two', cursive;
+}
+
+.splashDiv a {
+  width: 100%;
+  max-width: 450px;
+  margin: 5px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--text-color-1);
+}
+
+.splashDiv .login {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 3px;
+}

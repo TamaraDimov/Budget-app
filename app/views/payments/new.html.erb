@@ -1,0 +1,35 @@
+
+<%= form_with model: [current_user, @group, Payment.new], url: user_group_payments_path(current_user, @group) do |form| %>
+
+
+<header>
+    <div class="form-title title">
+      <div ><%= link_to(:back) do %>
+        <%= content_tag(:div) do %>
+          <i class="material-icons">BACK</i>
+        <% end %>
+      <% end %></div>
+      <div><h2>New Payment</h2></div>
+      <div><%= form.submit "Submit" %></div>
+    </div>
+  </header>
+
+<div class="form-body">
+  <%= form_with url: user_group_payments_path(current_user, group_id:@group.id), method: :post,
+  scope: :payment_item , local: true, class: "category-form" do |f| %>
+  <div class="form-field">
+    <%= f.text_field :name, required:true,
+    placeholder:'Enter Name',class:'custom-form-field-text' %>
+  </div>
+  
+  <div class="form-field">
+  <%= f.number_field :amount, step:0.15,min:0 , required:true,
+    placeholder:'Enter Amount', class:'custom-form-field-text' %>
+  </div>
+
+  <div class="form-field-selection">
+  <%= f.collection_select :group_id, @current_user.groups, :id, :name, { prompt: 'Select a group' }, required: true %>
+  </div>
+  <% end %>
+  <% end %>
+</div>
