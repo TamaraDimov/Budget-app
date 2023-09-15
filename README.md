@@ -51,7 +51,7 @@
 
 ## 🚀 Loom Demo <a name="loom-demo"></a>
 
-- [Loom Video Presentation](https://www.loom.com/share/Budget-Tracker-Application-for-Ruby-Unreal-Skeleton-Project-29ea82b78de84c64b16e31028f2e4601?sid=b586eeb2-cf54-424e-9a5b-a308da657bfa)
+- [Loom Video Presentation](https://www.loom.com/share/Loom-Message-15-September-2023-8d2af9ad516c4c82a12ffe6f2843c47e)
 
 - [Demo link](https://rails-budget-e790cfd72770.herokuapp.com/)
 
